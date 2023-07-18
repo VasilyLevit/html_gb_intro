@@ -1,0 +1,67 @@
+/* Обращение по тегу */
+body {
+    font-family: sans-serif;
+}
+
+/* Обращение по тегу а - ко всем ссылкам */
+a {
+    text-decoration: none;
+}
+
+/* Класс меню ссылок */
+.nav_links {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* Класс заголовков h1 */
+.title {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+/* Класс заголовков h2 */
+.subtitle {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+/* Класс для параграфов */
+.text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7d7987;
+}
+
+.about_photo {
+    border-radius: 10px;
+    width: 350px;
+}
+
+.form_input {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 30px;
+}
+
+.form_button {
+    width: 120px;
+    height: 30px;
+    /* overflow: auto; */
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;    
+}
