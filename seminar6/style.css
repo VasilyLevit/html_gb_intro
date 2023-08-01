@@ -45,17 +45,14 @@ header {
 	color: #ffffff;
 }
 
-main {
-}
-
 .content__wrapper {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 197px;
 }
 
-.content-block {
-}
+/* .content-block {
+} */
 
 .content__subtitle {
 	font-size: 18px;
@@ -120,8 +117,8 @@ article {
 
 .cards-list__wrapper {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	/* grid-template-rows: 1fr 1fr 1fr; */
 	gap: 30px;
 }
 
@@ -157,7 +154,7 @@ article {
 }
 
 @media (max-width: 848px) {
-	/* медиа-запрос для планшета */
+	/* медиа-запрос для планшета шириной 848 */
 	.container {
 		width: 767px;
 	}
@@ -169,6 +166,7 @@ article {
 	}
 
 	.content__subtitle {
+		/* изменяем размер шрифта подзаголовка */
 		font-size: 16px;
 	}
 
@@ -179,23 +177,37 @@ article {
 
 	.logos {
 		justify-content: center;
+		/* перенос логотипов на новую строку */
 		flex-wrap: wrap;
 		gap: 32px;
-		width: 604px;
+		max-width: 650px;
+		/* одинаковые отступы слева и справа */
+		margin: auto;
 	}
 
-	.hidden {
+	/* .hidden {
+		скрывает большую картинку и все, что после
 		display: none;
-	}
+	} */
 
 	.cards-list__wrapper {
-		grid-template-columns: 1fr;
-		justify-items: center;
+		/* выстраиваем карточки в однин столбец */
+		grid-template-columns: repeat(1, 362px);
+		justify-content: center;
 		gap: 32px;
 	}
 
 	.card {
 		background: rgba(19, 32, 53, 0.4);
 		width: 302px;
+	}
+	.card-big {
+		grid-column: span 1;
+		grid-row: span 1;
+		gap: 30px;
+	}
+	.card-big img {
+		/* уменьшаем размер картинки как у маленьких карточек */
+		width: 98px;
 	}
 }
